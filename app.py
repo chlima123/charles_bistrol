@@ -65,7 +65,7 @@ def append_row(sheet_id: str, day: str, hour: str, stool_type: int) -> None:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Joemia Diario Bistrol", page_icon="🩺", layout="centered")
+    st.set_page_config(page_title="Charles Diario Bistrol", page_icon="🩺", layout="centered")
     st.title("Charles Diario Bistrol")
     st.caption("Cada envio grava uma nova linha na planilha do Google Drive.")
 
