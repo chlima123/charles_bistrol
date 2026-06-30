@@ -19,7 +19,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--folder-id", required=True, help="ID da pasta no Google Drive")
     parser.add_argument(
         "--title",
-        default="Joemia Diario Bistrol",
+        default="Charles Diario Bistrol",
         help="Titulo da planilha",
     )
     parser.add_argument(
@@ -60,13 +60,6 @@ def create_sheet_in_folder(drive, folder_id: str, title: str) -> Dict:
 
 
 def init_headers(sheets, spreadsheet_id: str) -> None:
-    sheets.spreadsheets().values().update(
-        spreadsheetId=spreadsheet_id,
-        range="A1:C1",
-        valueInputOption="RAW",
-        body={"values": [["dia", "hora", "tipo"]]},
-    ).execute()
-
     requests = [
         {
             "updateSpreadsheetProperties": {
