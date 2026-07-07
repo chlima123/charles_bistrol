@@ -1,4 +1,4 @@
-# Joemia Diario Bistrol (Streamlit)
+# Charles Diario Bistrol (Streamlit)
 
 Formulario web para registrar dados usando a escala Bistrol.
 Cada envio grava uma linha com `dia`, `hora` e `tipo` em uma planilha Google dentro da pasta do Drive.
