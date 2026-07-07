@@ -9,7 +9,6 @@ Cada envio grava uma linha com `dia`, `hora` e `tipo` em uma planilha Google den
 - `setup_sheet.py`: cria a planilha na pasta do Drive e inicia os cabecalhos
 - `requirements.txt`: dependencias do projeto
 - `.streamlit/secrets.example.toml`: modelo de secrets para rodar local e no Streamlit Cloud
-- `registros_template.csv`: modelo de tabela com colunas `dia,hora,tipo`
 
 ## 1) Preparar Google Drive/Sheets
 
@@ -44,18 +43,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## 4) Publicar no GitHub
-
-```bash
-git init
-git add .
-git commit -m "feat: cria app Joemia Diario Bistrol"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPO.git
-git push -u origin main
-```
-
-## 5) Publicar no Streamlit Cloud
+## 4) Publicar no Streamlit Cloud
 
 1. Acesse: https://share.streamlit.io
 2. Clique em **New app**.

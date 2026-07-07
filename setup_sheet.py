@@ -1,11 +1,10 @@
 import argparse
 import re
-from typing import Dict, List
 
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-SCOPES: List[str] = [
+SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
 ]
@@ -46,7 +45,7 @@ def create_services(credentials_path: str):
     return drive, sheets
 
 
-def create_sheet_in_folder(drive, folder_id: str, title: str) -> Dict:
+def create_sheet_in_folder(drive, folder_id: str, title: str) -> dict:
     metadata = {
         "name": title,
         "mimeType": "application/vnd.google-apps.spreadsheet",
